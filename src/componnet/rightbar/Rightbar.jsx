@@ -10,12 +10,12 @@ function Rightbar({ profile }) {
     return (
       <Fragment>
         <div className="giftp-title">
-          <img src={`${PF}/person/gift.PNG`} className="gift" alt="..." />
+          <img src={`${PF}/person/gift.png`} className="gift" alt="..." />
           <span>
             <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today
           </span>
         </div>
-        <img src={`${PF}/person/friends.JPG`} className="img-two" alt="..." />
+        <img src={`${PF}/person/friends.jpg`} className="img-two" alt="..." />
         <div className="online-fr-big">
           <h4>Online Friends</h4>
 
