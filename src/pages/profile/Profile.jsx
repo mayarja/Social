@@ -19,12 +19,12 @@ function Profile() {
             <div className="top-profile">
               <div className="coverimge">
                 <img
-                  src={`${PF}/person/image-12.JPG`}
+                  src={`${PF}/person/image-12.jpg`}
                   className="img-cover"
                   alt="..."
                 />
                 <img
-                  src={`${PF}/person/image-1.JPG`}
+                  src={`${PF}/person/image-1.jpg`}
                   className="person-img"
                   alt="..."
                 />

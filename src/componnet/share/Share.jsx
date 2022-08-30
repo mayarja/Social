@@ -10,7 +10,7 @@ function Share() {
     <div className="share">
       <div className="share-wrpper">
         <div className="img-inp">
-          <img src={`${PF}person/image-1.JPG`} alt="..." />
+          <img src={`${PF}person/image-1.jpg`} alt="..." />
           <input type="text" placeholder="What's in your mind Mayar?" />
         </div>
         <hr className="hr-share"></hr>
