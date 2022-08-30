@@ -1,6 +1,16 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./login.css";
 
-function Login() {
+function Login({ fnregister }) {
+  let [text, setText] = useState("");
+  let [email, setEmail] = useState("");
+
+  let gofn = () => {
+    if (text.length > 0 && email.length > 0) {
+      fnregister();
+    }
+  };
   return (
     <div className="login-page">
       <div className="container">
@@ -17,13 +27,36 @@ function Login() {
           </div>
           <div className="col-lg-6 ">
             <div className="login-right">
-              <input type="email" required placeholder="Email" />
-              <input type="password" required placeholder="Password" />
-              <button className="btn form-control btn-one">Login In</button>
-              <span>Forget Password?</span>
-              <button className="btn form-control btn-two">
-                Create a New Account
-              </button>
+              <form className="login-right">
+                <input
+                  type="email"
+                  value={text}
+                  required
+                  placeholder="Email"
+                  onChange={(e) => {
+                    setText(e.target.value);
+                  }}
+                />
+                <input
+                  type="password"
+                  value={email}
+                  required
+                  placeholder="Password"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+                <button className="btn form-control btn-one" onClick={gofn}>
+                  Login In
+                </button>
+                <span>Forget Password?</span>
+                <Link
+                  className="link btn form-control btn-two"
+                  to="/Social/register"
+                >
+                  Create a New Account
+                </Link>
+              </form>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ function Navbar() {
     <div className="nav">
       <div className="col-lg-3">
         <div className="nav-f">
-          <Link to="/" className="Link">
+          <Link to="/Social" className="Link">
             <h2 className="logo">Merosocial</h2>
           </Link>
         </div>
@@ -42,7 +42,9 @@ function Navbar() {
               <span>1</span>
             </div>
           </div>
-          <img src={`${PF}/person/image-1.JPG`} alt="..." />
+          <Link to="/Social/profile">
+            <img src={`${PF}/person/image-1.JPG`} alt="..." />
+          </Link>
         </div>
       </div>
     </div>

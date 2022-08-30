@@ -37,8 +37,8 @@ function Post({ post }) {
         </div>
         <div className="bottom-post">
           <div className="icon">
-            <img src="/assets/person/like.PNG" alt="..." onClick={handelclik} />
-            <img src="/assets/person/heart.PNG" alt=".." onClick={handelclik} />
+            <img src={`${PF}/person/like.png`} alt="..." onClick={handelclik} />
+            <img src={`${PF}/person/heart.png`} alt=".." onClick={handelclik} />
             <span>{like} people like it</span>
           </div>
           <div className="comments">

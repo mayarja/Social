@@ -1,12 +1,16 @@
 import "./share.css";
 import { IoMdPhotos, IoMdPricetag } from "react-icons/io";
 import { MdTagFaces, MdLocationPin } from "react-icons/md";
+import { Users } from "../../dummyData";
+
 function Share() {
+  let PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   return (
     <div className="share">
       <div className="share-wrpper">
         <div className="img-inp">
-          <img src="/assets/person/image-1.JPG" alt="..." />
+          <img src={`${PF}person/image-1.JPG`} alt="..." />
           <input type="text" placeholder="What's in your mind Mayar?" />
         </div>
         <hr className="hr-share"></hr>
