@@ -1,0 +1,52 @@
+.top-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-profile .coverimge{
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    }
+
+.top-profile .coverimge .img-cover{
+        width:100%;
+        height: 300px;
+        object-fit: cover;
+    }
+.top-profile .coverimge .person-img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    right: 0;
+    top: 95%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top-profile  .title-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-profile  .title-profile span{
+    color: #777;
+}
+
+
+.bottom-profile{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row>* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

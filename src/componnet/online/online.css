@@ -1,0 +1,28 @@
+.online-fr-big .online-fr{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.online-fr-big .img-online{
+    position: relative;
+}
+.online-fr-big .img-online img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.online-fr-big .img-online span{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: green;
+    border: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}

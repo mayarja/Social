@@ -1,0 +1,84 @@
+.post{
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 20px 0;
+}
+.post .post-wrapper{
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.post .post-wrapper .top-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.post .post-wrapper .top-post .img-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.post .post-wrapper .top-post .img-title img{
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    object-fit: cover;
+    cursor: pointer;
+}
+.post .post-wrapper .top-pos .img-title h5{
+    font-weight: bold;
+}
+
+.post .post-wrapper .top-post .img-title span{
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.post .post-wrapper .top-post .icc{
+    cursor: pointer;
+}
+
+.post .center-post{
+    margin: 20px 0;
+}
+.post .center-post img{
+width: 100%;
+max-height: 500px;
+object-fit: contain;
+}
+
+.post .bottom-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.post .bottom-post .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.post .bottom-post .icon img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.post .bottom-post .icon span{
+
+    margin-left: 7px;
+    font-size: 16px;
+}
+
+.post .bottom-post .comments span{
+    font-size: 16px;
+    border-bottom:  1px dashed #999;
+    margin-bottom: 5px;
+}
